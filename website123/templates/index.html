@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harp City RPC</title>
+    <link rel="stylesheet" href="C:\Users\jrmca\Desktop\website123\static\css/style.css">
+</head>
+<body>
+<  <!-- Navigation Bar -->
+<header>
+    <div class="logo">
+        <img src="C:/Users/jrmca/Desktop/website123/images/logo.jpg" alt="Harp City RPC Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="nav-btn">Home Page</a></li>
+            <li><a href="about.html" class="nav-btn">About Us</a></li>
+            <li><a href="services.html" class="nav-btn">Services</a></li>
+            <li><a href="join.html" class="nav-btn">Join Us</a></li>
+            <li><a href="contact.html" class="nav-btn">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="buttons">
+        <a href="signup.html" class="btn">Member Signup</a>
+        <a href="login.html" class="btn">Member Login</a>
+    </div>
+</header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Harp City RPC</h1>
+            <p>Bringing The Best Irish Qb-Core Roleplay To You!.</p>
+            <a href="https://discord.gg/n4ydkx2eaw" class="btn">Join Our Discord Today!</a>
+        </div>
+    </section>
+    
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service">
+                <strong>Dublin Fire Brigade</strong>
+                <button onclick="toggleDetails('fire')">About</button>
+                <p id="fire" class="service-details">Providing emergency fire and rescue services.</p>
+            </div>
+            <div class="service">
+                <strong>An Garda Síochána</strong>
+                <button onclick="toggleDetails('police')">About</button>
+                <p id="police" class="service-details">Ensuring law and order across the community.</p>
+            </div>
+            <div class="service">
+                <strong>National Ambulance Service</strong>
+                <button onclick="toggleDetails('ambulance')">About</button>
+                <p id="ambulance" class="service-details">Providing life-saving medical assistance.</p>
+            </div>
+            <div class="service">
+                <strong>Civilian Operations</strong>
+                <button onclick="toggleDetails('civilian')">About</button>
+                <p id="civilian" class="service-details">Engage in realistic civilian roleplay.</p>
+            </div>
+            <div class="service">
+                <strong>Control Room</strong>
+                <button onclick="toggleDetails('control')">About</button>
+                <p id="control" class="service-details">Coordinate emergency responses efficiently.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    function toggleDetails(id) {
+        var details = document.getElementById(id);
+        if (details.style.display === "none" || details.style.display === "") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Harp City RPC. All rights reserved.</p>
+        <!-- Join Our Discord Button -->
+        <a href="https://discord.gg/n4ydkx2eaw" class="discord-btn">Join Our Discord</a>
+    </div>
+</footer>
+</body>
+</html>
